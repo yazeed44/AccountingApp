@@ -491,7 +491,7 @@ public class AccountingMain extends javax.swing.JFrame implements Printable {
         addBill2.setBackground(new java.awt.Color(204, 204, 255));
         addBill2.setFont(new java.awt.Font("KacstOne", 1, 14)); // NOI18N
         addBill2.setForeground(new java.awt.Color(153, 153, 255));
-        addBill2.setText("إضافة فاتورة جديدة");
+        addBill2.setText("إضافة إيراد جديد");
         addBill2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addBill2ActionPerformed(evt);
