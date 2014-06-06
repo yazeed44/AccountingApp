@@ -32,6 +32,8 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author yazeed
  */
+
+//hi everyone
 public class AccountingMain extends javax.swing.JFrame implements Printable {
 
     //main Interface width and height
@@ -126,10 +128,6 @@ public class AccountingMain extends javax.swing.JFrame implements Printable {
         jScrollPane3 = new javax.swing.JScrollPane();
         textFullReport = new javax.swing.JTextArea();
         printFullReport = new javax.swing.JButton();
-        addBill = new javax.swing.JButton();
-        browseBtn = new javax.swing.JButton();
-        addOutGoing = new javax.swing.JButton();
-        about = new javax.swing.JLabel();
 
         incomingDialog.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         incomingDialog.setResizable(false);
@@ -139,11 +137,13 @@ public class AccountingMain extends javax.swing.JFrame implements Printable {
         amountIncoming.setToolTipText("المبلغ");
         amountIncoming.setDragEnabled(true);
         amountIncoming.setName(""); // NOI18N
+        /*
         amountIncoming.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-               
+                amountIncomingActionPerformed(evt);
             }
         });
+        */
 
         isPayedIncoming.setFont(new java.awt.Font("KacstOne", 1, 14)); // NOI18N
         isPayedIncoming.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "مدفوعة", "غير مدفوعة" }));
@@ -250,11 +250,13 @@ public class AccountingMain extends javax.swing.JFrame implements Printable {
         jLabel5.setText("المبلغ:");
 
         amountOutgoing.setFont(new java.awt.Font("KacstOne", 1, 14)); // NOI18N
+        /*
         amountOutgoing.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                
+                amountOutgoingActionPerformed(evt);
             }
         });
+        */
 
         addOutgoingDialog.setFont(new java.awt.Font("KacstOne", 1, 14)); // NOI18N
         addOutgoingDialog.setText("إضافة");
@@ -612,61 +614,15 @@ public class AccountingMain extends javax.swing.JFrame implements Printable {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        addBill.setFont(new java.awt.Font("KacstOne", 1, 14)); // NOI18N
-        addBill.setText("إضافة فاتورة جديدة");
-        addBill.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                
-            }
-        });
-
-        browseBtn.setFont(new java.awt.Font("KacstOne", 1, 14)); // NOI18N
-        browseBtn.setText("استعراض الإيرادات والمصروفات");
-        browseBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                
-            }
-        });
-
-        addOutGoing.setFont(new java.awt.Font("KacstOne", 1, 14)); // NOI18N
-        addOutGoing.setText("اضافة مصروفات جديدة");
-        addOutGoing.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-               
-            }
-        });
-
-        about.setFont(new java.awt.Font("KacstOne", 1, 18)); // NOI18N
-        about.setText("تم صنع التطبيق بواسطة : يزيد أحمد المقوشي");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(101, 101, 101)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(browseBtn)
-                    .addComponent(addBill, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(addOutGoing, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(22, Short.MAX_VALUE)
-                .addComponent(about)
-                .addGap(62, 62, 62))
+            .addGap(0, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(addBill)
-                .addGap(66, 66, 66)
-                .addComponent(addOutGoing)
-                .addGap(55, 55, 55)
-                .addComponent(browseBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                .addComponent(about)
-                .addContainerGap())
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         pack();
@@ -1398,16 +1354,12 @@ public class AccountingMain extends javax.swing.JFrame implements Printable {
        
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel about;
-    private javax.swing.JButton addBill;
     private javax.swing.JButton addBill2;
     private javax.swing.JButton addIncoming;
-    private javax.swing.JButton addOutGoing;
     private javax.swing.JButton addOutGoing2;
     private javax.swing.JButton addOutgoingDialog;
     private javax.swing.JTextField amountIncoming;
     private javax.swing.JTextField amountOutgoing;
-    private javax.swing.JButton browseBtn;
     private javax.swing.JFrame browseFrame;
     private javax.swing.JComboBox categoryIncoming;
     private javax.swing.JLabel dailyIncoming;
