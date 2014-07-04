@@ -30,7 +30,7 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 /**
  *
- * @author yazeed
+ * @author yazeed44
  */
 
 //hi everyone
@@ -63,7 +63,7 @@ public class AccountingMain extends javax.swing.JFrame implements Printable {
     /* Synthesise some sample lines of text */
     String[] textLines;
   
-    public AccountingMain() {
+    public AccountingMain()  {
         initComponents();
         setTitles();
         setTableContentIncoming();
@@ -74,7 +74,7 @@ public class AccountingMain extends javax.swing.JFrame implements Printable {
         rowIncoming = getSelectedRowIncoming();//set up the listener
         rowOutgoing = getSelectedRowOutgoing();//set up the listener
         browseFrame.setResizable(false);//can't resize the main interface , because it will be horrible if someone did
-        
+       
     }
 
     /**
@@ -885,7 +885,7 @@ public class AccountingMain extends javax.swing.JFrame implements Printable {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+   final static public void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

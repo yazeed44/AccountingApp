@@ -10,7 +10,7 @@ package accountingapp;
  *
  * @author yazeed44
  */
-public final class AccountingHelp {
+public   class AccountingHelp   {
     
     //Columns for incoming
     public static final int ID_ROW_INCOMING = 0,DATE_ROW_INCOMING = 1,AMOUNT_ROW_INCOMING = 2,CATEGORY_ROW_INCOMING = 3,
@@ -19,5 +19,5 @@ public final class AccountingHelp {
     
     //Columns for outgoing
     public static final int ID_ROW_OUTGOING = 0,DATE_ROW_OUTGOING = 1,AMOUNT_ROW_OUTGOING = 2,REASON_ROW_OUTGOING = 3,NOTE_ROW_OUTGOING = 4;
-            
+ 
 }

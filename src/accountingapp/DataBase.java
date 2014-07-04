@@ -8,8 +8,6 @@ package accountingapp;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
 /**
  *
@@ -38,8 +36,8 @@ static Connection c = null;//connection instance
                    
                }
                
-               catch (Exception e){
-                   System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+               catch (ClassNotFoundException | SQLException e){
+                   e.printStackTrace();
                    
                }
        
@@ -65,7 +63,7 @@ static Connection c = null;//connection instance
                     
                   }
                   
-                  catch (Exception e){
+                  catch (SQLException e){
                      
                       e.printStackTrace();
      
